@@ -12,6 +12,23 @@ class Owner
     return "I am a #{species}."
   end
   
+  def buy_cat()
+    
+  end
+  
+  def buy_dog()
+    
+  end
+  
+  def cats()
+    return Cat.all.select{|cat| cat.owner == self}
+  end
+  
+  def dogs()
+    return Dog.all.select{|cat| cat.owner == self}
+  end
+    
+  
   def self.all()
     return @@all
   end
