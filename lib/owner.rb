@@ -1,5 +1,5 @@
 class Owner
-  @@assert_select_email
+  @@all = []
   attr_reader(:name, :species)
   
   def initialize(owner_name)
@@ -11,6 +11,15 @@ class Owner
     puts @species
   end
   
+  def self.all()
+    return @@all
+  end
   
+  def self.count()
+    return @@all.size
+  end
   
+  def self.reset_all()
+    @@all.clear
+  end
 end
