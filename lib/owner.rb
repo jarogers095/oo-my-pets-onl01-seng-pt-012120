@@ -29,7 +29,7 @@ class Owner
   end
   
   def dogs()
-    return Dog.all.select{|cat| cat.owner == self}
+    return Dog.all.select{|dog| dog.owner == self}
   end
     
   
