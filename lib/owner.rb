@@ -41,6 +41,12 @@ class Owner
       dog.mood = "nervous"
       dog.owner = nil
     end
+    
+    self.cats.each do |cat| 
+      cat.mood = "nervous"
+      cat.owner = nil
+    end
+  end
   
   def self.all()
     return @@all
