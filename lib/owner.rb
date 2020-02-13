@@ -12,8 +12,8 @@ class Owner
     return "I am a #{species}."
   end
   
-  def buy_cat()
-    
+  def buy_cat(cat_name)
+    new_cat = Cat.new(cat_name, self)
   end
   
   def buy_dog()
