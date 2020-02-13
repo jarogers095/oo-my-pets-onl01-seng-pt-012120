@@ -5,10 +5,11 @@ class Owner
   def initialize(owner_name)
     @name = owner_name
     @species = "human"
+    @@all << self
   end
   
   def say_species()
-    puts @species
+    puts "I am a #{species}."
   end
   
   def self.all()
