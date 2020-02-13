@@ -20,6 +20,10 @@ class Owner
     new_dog = Dog.new(dog_name, self)
   end
   
+  def walk_dogs()
+    dogs.each {|dog| dog.mood == "happy"}
+  end
+  
   def cats()
     return Cat.all.select{|cat| cat.owner == self}
   end
