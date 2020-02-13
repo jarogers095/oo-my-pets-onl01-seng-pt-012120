@@ -10,5 +10,7 @@ class Cat
     @@all << self
   end
   
-  
+  def self.all()
+    returns @@all
+  end
 end
