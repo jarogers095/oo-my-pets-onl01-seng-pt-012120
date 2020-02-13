@@ -11,6 +11,6 @@ class Dog
   end
   
   def self.all()
-    returns @@all
+    return @@all
   end
 end
